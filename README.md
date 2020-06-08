@@ -4,6 +4,8 @@
 
 Jittered Hexagonal Grid Sampling
 
+<img src="https://github.com/kchapelier/jittered-hexagonal-grid-sampling/raw/master/img/debugview.png" style="image-rendering:pixelated; width:500px;"></img>
+
 ## Installing
 
 With [npm](https://www.npmjs.com/) do:

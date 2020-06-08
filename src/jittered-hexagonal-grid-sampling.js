@@ -35,7 +35,7 @@ var vertices = [
  * @param {object} options Options
  * @param {Array} options.shape Shape of the space
  * @param {float} options.radius Minimum distance between each points
- * @param {float} options.jitter Jitter amount, defaults to 0.666
+ * @param {float} [options.jitter] Jitter amount, defaults to 0.666
  * @param {function|null} [rng] RNG function, defaults to Math.random
  * @constructor
  */
@@ -43,7 +43,7 @@ function JitteredHexagonalGridSampling (options, rng) {
     this.width = options.shape[0];
     this.height = options.shape[1];
     this.r = options.radius || 1;
-    this.jitter = options.jitter || 0.6666;
+    this.jitter = typeof options.jitter === 'undefined' ? 0.6666 : options.jitter;
     this.jitterRadius = this.r * this.jitter;
 
     this.rng = rng || Math.random;
