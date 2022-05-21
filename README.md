@@ -23,7 +23,7 @@ yarn add jittered-hexagonal-grid-sampling
 A compiled version for web browsers is also available on a CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/kchapelier/jittered-hexagonal-grid-sampling@1.0.0/build/jittered-hexagonal-grid-sampling.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kchapelier/jittered-hexagonal-grid-sampling@1.0.1/build/jittered-hexagonal-grid-sampling.min.js"></script>
 ```
 
 ## Features
@@ -58,6 +58,8 @@ console.log(points); // array of sample points, themselves represented as simple
   - *radius :* Radius of the circumcircle of the regular hexagon, required.
   - *jitter :* Jitter amount, defaults to 0.666.
 - *rng :* A function to use as random number generator, defaults to Math.random.
+
+The following code will allow the generation of points where both coordinates will range from *0 up to 50* (including 0, but not including 50, **0 <= c < 50**).
 
 ```js
 var sampling = new JitteredHexagonalGridSampling({
@@ -113,6 +115,10 @@ while(point = sampling.next()) {
 Reinitialize the grid as well as the internal state.
 
 ## History
+
+### [1.0.1](https://github.com/kchapelier/jittered-hexagonal-grid-sampling/tree/1.0.1) (2022-05-21) :
+
+- Update dev dependencies
 
 ### [1.0.0](https://github.com/kchapelier/jittered-hexagonal-grid-sampling/tree/1.0.0) (2020-06-08) :
 

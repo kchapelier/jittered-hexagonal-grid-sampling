@@ -1,6 +1,6 @@
 {
   "name": "jittered-hexagonal-grid-sampling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jittered hexagonal grid sampling",
   "main": "src/jittered-hexagonal-grid-sampling.js",
   "scripts": {
@@ -31,10 +31,10 @@
   "homepage": "https://github.com/kchapelier/jittered-hexagonal-grid-sampling",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^16.5.1",
-    "chai": "~4.2.0",
-    "mocha": "~7.1.2",
+    "browserify": "^17.0.0",
+    "chai": "^4.3.6",
+    "mocha": "~10.0.0",
     "pngjs-nozlib": "~1.0.0",
-    "terser": "^4.6.13"
+    "terser": "^5.13.1"
   }
 }
